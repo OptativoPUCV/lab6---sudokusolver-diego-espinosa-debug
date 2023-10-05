@@ -51,7 +51,7 @@ int is_valid(Node* n){
 
 List* get_adj_nodes(Node* n){
   List* list=createList();
-  pushBack(list,n->sudo);
+  pushBack(list,n);
 
   Node * aux = n; 
   
@@ -61,7 +61,7 @@ List* get_adj_nodes(Node* n){
     {
       if(aux->sudo[i][n] == 0 ){
         aux->sudo[i][n] = 1;
-        pushBack(list,aux->sudo);
+        pushBack(list,aux);
       }
     }
   }
