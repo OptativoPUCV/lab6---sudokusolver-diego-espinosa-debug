@@ -51,7 +51,7 @@ int is_valid(Node* n){
 
 List* get_adj_nodes(Node* n){
   List* list=createList();
-  Node * aux = n;
+  //Node * aux = n;
 
   n->sudo[1][2] = 1;
   
