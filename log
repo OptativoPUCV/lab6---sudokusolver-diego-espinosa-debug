@@ -128,3 +128,14 @@ Thu 05 Oct 2023 07:52:11 PM UTC:
  tests:  0|5
 total_score: 0/70
 2b9e8f2
+Thu 05 Oct 2023 07:53:45 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:54:10: error: unused variable ‘aux’ [-Werror=unused-variable]
+   54 |   Node * aux = n;
+      |          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+fdd2b67

@@ -53,9 +53,9 @@ List* get_adj_nodes(Node* n){
   List* list=createList();
   Node * aux = n;
 
-  aux->sudo[1][2] = 1;
+  n->sudo[1][2] = 1;
   
-  pushBack(list,aux->sudo);
+  pushBack(list,n->sudo);
   /*for(int i = 0; i < 9; i++)
   {
     for(int n = 0; n < 9; n++)
