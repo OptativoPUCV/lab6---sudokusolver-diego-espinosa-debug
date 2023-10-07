@@ -175,3 +175,14 @@ Sat 07 Oct 2023 09:42:06 PM UTC:
  tests:  0|5
 total_score: 0/70
 1498468
+Sat 07 Oct 2023 09:44:31 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:60:10: error: ‘aux’ undeclared (first use in this function)
+   60 |       if(aux->sudo[i][t] == 0 ){
+      |          ^~~
+sudoku.c:60:10: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+a622db2
