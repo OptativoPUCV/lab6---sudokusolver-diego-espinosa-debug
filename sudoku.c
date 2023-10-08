@@ -85,6 +85,8 @@ int is_valid(Node* n){
       subMatriz[aux] = 1;
     }
   }
+  
+
 
   return 1;
 }
@@ -104,8 +106,6 @@ List* get_adj_nodes(Node* n){
 
           if(is_valid(aux)){
             pushBack(list,aux);
-          }else{
-            free(aux);
           }
         }
       }
@@ -116,7 +116,15 @@ List* get_adj_nodes(Node* n){
 
 
 int is_final(Node* n){
-    return 0;
+  for(int k =  0;k < 9; k++){
+    for(int h = 0; h < 9;h++){
+      if(n->sudo[k][h] == 0) return 0;
+    }
+  }
+
+  if(is_valid(n)) return 1;
+  
+   return 0;
 }
 
 Node* DFS(Node* initial, int* cont){
