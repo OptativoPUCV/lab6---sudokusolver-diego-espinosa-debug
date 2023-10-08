@@ -85,7 +85,12 @@ int is_valid(Node* n){
       subMatriz[aux] = 1;
     }
   }
-  
+
+  for(int h = 0; h < 9; h++){
+    for(int s = 0; s < 9; s++){
+      if(n->sudo[h][s] == 0) return 0;
+    }
+  }
 
   return 1;
 }
