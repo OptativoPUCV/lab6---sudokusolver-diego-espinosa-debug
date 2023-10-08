@@ -137,13 +137,32 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
-   /*Stack* S = createStack();
+   Stack* S = createStack();
   push(S, initial);
   cont = 0;
 
   
+  while(!is_empty(S)){
+    (cont)++;
+
+    Node* NodoTop = top(S);
+    pop(S);
+
+    int finall = 1;
+    for(int fila = 0; fila < 9 && finall; fila++){
+      for(int columna = 0 ; columna < 9 && finall; columna++){
+        if(NodoTop->sudo[fila][columna] == 0){
+          finall = 0;
+        }
+      }
+    }
+    if(finall){
+      return NodoTop;
+    }
+
+  
   }
-  */
+  
   
   return NULL;
 }
