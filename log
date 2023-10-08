@@ -472,3 +472,14 @@ Sun 08 Oct 2023 08:18:15 PM UTC:
  tests:  6|2
 total_score: 45/70
 771e95a
+Sun 08 Oct 2023 08:18:45 PM UTC: 
+ sudoku.c | 2 --
+ 1 file changed, 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_final’:
+sudoku.c:126:1: error: control reaches end of non-void function [-Werror=return-type]
+  126 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+6c42808
