@@ -121,6 +121,10 @@ int is_final(Node* n){
       if(n->sudo[k][h] == 0) return 0;
     }
   }
+
+  if(!is_valid(n)){
+    return 0;
+  }
   
    return 1;
 }
