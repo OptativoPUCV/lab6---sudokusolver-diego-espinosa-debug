@@ -124,7 +124,7 @@ int is_final(Node* n){
 
   if(is_valid(n)) return 1;
   
-   return 0;
+   return 1;
 }
 
 Node* DFS(Node* initial, int* cont){
