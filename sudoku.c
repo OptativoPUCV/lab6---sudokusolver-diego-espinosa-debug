@@ -61,7 +61,7 @@ int is_valid(Node* n){
     {
       int aux = n->sudo[m][t];
       if(filas[aux] == 1 && aux > 0){
-        //return 0;
+        return 1;
       }
       filas[aux] = 1;
     }
