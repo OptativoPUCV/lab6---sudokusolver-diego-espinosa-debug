@@ -60,8 +60,8 @@ int is_valid(Node* n){
     for(int t = 0; t < 9; t++)
     {
       int aux = n->sudo[m][t];
-      if(columnas[aux] == 1){
-        //return 0;
+      if(columnas[aux] == 1 && aux > 0){
+        return 0;
       }
       columnas[aux] = 1;
     }
