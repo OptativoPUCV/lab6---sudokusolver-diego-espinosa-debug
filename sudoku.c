@@ -79,10 +79,10 @@ int is_valid(Node* n){
       int j=3*(k%3) + (p%3) ;
 
       int aux = n->sudo[i][j];
-      if(columnas[aux] == 1 && aux > 0){
+      if(subMatriz[aux] == 1 && aux > 0){
         return 0;
       }
-      columnas[aux] = 1;
+      subMatriz[aux] = 1;
     }
   }
   
