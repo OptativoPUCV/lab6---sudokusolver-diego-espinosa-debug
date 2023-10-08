@@ -61,7 +61,7 @@ int is_valid(Node* n){
     {
       int aux = n->sudo[m][t];
       if(columnas[aux] == 1){
-        return 1;
+        return 0;
       }
       columnas[aux] = 1;
     }
@@ -70,7 +70,7 @@ int is_valid(Node* n){
 
   
 
-  return 0;
+  return 1;
 }
 
 
