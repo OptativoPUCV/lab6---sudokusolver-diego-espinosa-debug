@@ -50,7 +50,7 @@ int is_valid(Node* n){
 
   for(int m = 0; m < 9; m++)
   {
-    for(int i = 0; i < 9; i++){
+    for(int i = 0; i < 10; i++){
       filas[i] = 0;
     }
     
