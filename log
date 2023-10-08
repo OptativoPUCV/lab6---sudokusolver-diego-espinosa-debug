@@ -391,3 +391,18 @@ Sun 08 Oct 2023 08:50:42 AM UTC:
  tests:  5|3
 total_score: 35/70
 ba32ee0
+Sun 08 Oct 2023 08:54:57 AM UTC: 
+ sudoku.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:82:10: error: ‘columnas’ undeclared (first use in this function)
+   82 |       if(columnas[aux] == 1 && aux > 0){
+      |          ^~~~~~~~
+sudoku.c:82:10: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:75:9: error: unused variable ‘subMatriz’ [-Werror=unused-variable]
+   75 |     int subMatriz [10] = {0};
+      |         ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6814b5b
