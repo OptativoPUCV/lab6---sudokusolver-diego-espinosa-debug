@@ -142,7 +142,8 @@ Node* DFS(Node* initial, int* cont){
   cont = 0;
 
   
-  while(!is_empty(S)){
+  while(!is_empty(S))
+  {
     (cont)++;
 
     Node* NodoTop = top(S);
@@ -168,7 +169,6 @@ Node* DFS(Node* initial, int* cont){
       NodoAd = next(nodosAD);
     }
     free(NodoTop);
-    }
 
   
   }
