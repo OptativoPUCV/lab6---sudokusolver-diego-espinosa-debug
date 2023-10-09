@@ -160,10 +160,18 @@ Node* DFS(Node* initial, int* cont){
       return NodoTop;
     }
 
+    List* nodosAD = get_adj_nodes(NodoTop);
+    Node* NodoAd = first(nodosAD);
+
+    while(NodoAd){
+      push(S, NodoAd);
+      NodoAd = next(nodosAD);
+    }
+    free(NodoTop);
+    }
+
   
   }
-  
-  
   return NULL;
 }
 
